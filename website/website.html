@@ -1,0 +1,267 @@
+<html>
+<body>
+
+<form id="frm1">
+  First name: <input type="name" name="fname"><br>
+  Last name: <input type="name" name="lname"><br>
+</form> 
+
+<p>Click to check</p>
+
+<button onclick="myFunction()">Try it</button>
+
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("frm1");
+    var y = x.length;
+    
+    var text = "";
+    for (var i = 0; i < y ;i++) {
+        text += x.elements[i].value + "<br>";
+        
+    }
+
+document.write(text+"<br>"+"<br>"+"<br>");
+
+
+var p = 0;
+var f = [];
+
+
+
+for(var i=0;i<text.length;i++){
+
+if(text[i] == "A"){
+p= p+1;
+
+
+}
+
+else if (text[i] =="B"){
+p= p+2;
+
+}
+
+else if (text[i] == "C"){
+p= p+3;
+
+}
+
+else if (text[i] == "D"){
+p= p+4;
+
+}
+
+else if (text[i] == "D"){
+p= p+5;
+
+}
+
+else if (text[i] == "F"){
+p= p+6;
+
+}
+
+else if (text[i] == "G"){
+p= p+7;
+
+}
+
+else if (text[i] == "H" ){
+p= p+8;
+
+}
+
+else if (text[i] == "I"){
+p= p+9;
+
+}
+
+else if (text[i] == "J"){
+p= p+10;
+
+}
+
+else if (text[i] == "K"){
+p= p+11;
+
+}
+
+else if (text[i] == "L"){
+p= p+12;
+
+}
+
+else if (text[i] == "M"){
+p= p+13;
+
+}
+
+else if (text[i] == "N"){
+p= p+14;
+
+}
+
+else if (text[i] == "O"){
+p= p+15;
+
+}
+
+else if (text[i] == "P"){
+p= p+16;
+
+}
+
+else if (text[i] == "Q"){
+p= p+17;
+
+}
+
+else if (text[i] == "R"){
+p= p+18;
+
+}
+
+else if (text[i] == "S"){
+p= p+19;
+
+}
+
+else if (text[i] == "T"){
+p= p+20;
+
+}
+
+else if (text[i] == "U"){
+p= p+21;
+
+}
+
+else if (text[i] == "V"){
+p= p+22;
+
+}
+
+else if (text[i] == "W"){
+p= p+23;
+
+}
+
+else if (text[i] == "X"){
+p= p+24;
+
+}
+
+else if (text[i] == "Y"){
+p= p+25;
+
+}
+
+else if (text[i] == "Z"){
+p= p+26;
+
+}
+
+
+}
+
+
+
+var output = [],
+    sNumber = p.toString(),
+    len = sNumber.length;
+
+for (var i = 0;i < len; i++) {
+    output.push(+sNumber.charAt(i));
+}
+
+
+
+var sum=0;
+for (var i = 0;i < output.length; i++) {
+    sum+=output[i];
+}
+
+
+
+
+if(output.length>1){
+
+var output = [],
+    sNumber = sum.toString(),
+    len = sNumber.length;
+
+for (var i = 0;i < len; i++) {
+    output.push(+sNumber.charAt(i));
+}
+
+
+
+var s=0;
+for (var i = 0;i < output.length; i++) {
+    s+=output[i];
+}
+
+document.write(s);
+
+
+
+}
+
+
+
+
+/*
+document.write(output+"<br>"+"<br>"+"<br>");
+document.write(sum+"<br>"+"<br>"+"<br>");
+document.write(p+"<br>"+"<br>"+"<br>");
+
+
+
+var t = [],
+    k= sum.toString(),
+    l= k.length;
+
+for (var i = 0;i < l; i++) {
+   t.push(+sNumber.charAt(i));
+}
+
+document.write(t);
+
+document.write(f+ "<br>");
+var sum=0;
+for (var i = 0; i < f.length ; i++) {
+    sum += f[i] + "<br>";
+}
+document.write(sum);
+
+
+p = "";
+for (var i = 0; i < f.length ; i++) {
+    p += f[i] + "<br>";
+}
+document.write(p);
+
+var t,q,a;
+
+t="";
+q="";
+a="";
+t=f[0];
+q=f[1];
+a=f[2];
+document.write(t,q,a);
+ [text[0],text[1],text[2]];
+ */
+ 
+
+
+
+ 
+}
+</script>
+
+</body>
+</html>
